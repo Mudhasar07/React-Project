@@ -1,22 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// Creating React using Normal React.CreateElement
+// creating multiple component & passing inside the another component => which is called Nested Component.
 
-// const heading = React.createElement("h1", {id: "heading"}, "Hello From Normal React CreateElement");
-
-//  // Creating React Element using JSX -> Javascript Extension:
-
-const JsxHeading = (
-  <h1 id="heading" className="heading">
-    React Element Using JSX Syntax
-  </h1>
+const SecondComponent = () => (
+  <h1>I am from Second Componet</h1>
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const HeadingComponent = () => (
+  <div id="container">
+    <h1>Heading Component</h1>
+    <SecondComponent />
+  </div>
+)
 
-// root.render(heading);
+const root = ReactDOM.createRoot(document.getElementById("root"))
 
-// console.log(heading, "Normal React Ceatte Element");
-
-root.render(JsxHeading);
+// Rendering React Component => React component means => returning some JSX or React element.
+// How to render React component ?? => (<component-Name />)
+root.render(<HeadingComponent />);
