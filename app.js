@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// creating multiple component & passing inside the another component => which is called Nested Component.
-
 const SecondComponent = () => (
   <h1>I am from Second Componet</h1>
 );
 
+// Inside Heading component we are going to write Javascript operation by using or simple adding this => { }
 const HeadingComponent = () => (
   <div id="container">
+    <h2>{1000 + 200}</h2>
+    <h3>{console.log("Writing JS inside => React Function Component.")}</h3>
     <h1>Heading Component</h1>
     <SecondComponent />
   </div>
@@ -16,6 +17,4 @@ const HeadingComponent = () => (
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
-// Rendering React Component => React component means => returning some JSX or React element.
-// How to render React component ?? => (<component-Name />)
 root.render(<HeadingComponent />);
