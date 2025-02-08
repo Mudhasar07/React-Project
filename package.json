@@ -1,0 +1,35 @@
+{
+  "name": "react-frontend",
+  "version": "1.0.0",
+  "description": "My own new react project",
+  "scripts": {
+    "start": "parcel index.html",
+    "productionBuild": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mudhasar07/React-Project.git"
+  },
+  "keywords": [
+    "React",
+    "Javascript"
+  ],
+  "author": "Seeni Mohamed Mudhasar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mudhasar07/React-Project/issues"
+  },
+  "homepage": "https://github.com/Mudhasar07/React-Project#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist":[
+    "last 4 versions"
+  ]
+}
