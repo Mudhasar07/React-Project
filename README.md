@@ -18,4 +18,5 @@
 
 # Point to Remember
 - appendChild -> root.appendChild(anyAttribute) -> will append the value inside the root and make it visible
-- React.createElement(3 arg have to pass), ReactDOM.createRoot(document.getElementById("id"))
+- React.createElement(3 arg have to pass), ReactDOM.createRoot(document.getElementById("id"));
+- Inside heading Object -> Props will be there, -> Props contain -> children of the element(h1 message) and attribute(id, classname, etc)
