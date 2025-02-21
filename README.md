@@ -15,3 +15,6 @@
 - Tree Shaking Algorithm --> It remove unused code
 - It have Different Build for DEVELOPMENT and PRODUCTION
 - 
+
+# Point to Remember
+- appendChild -> root.appendChild(anyAttribute) -> will append the value inside the root and make it visible
