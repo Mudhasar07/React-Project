@@ -18,3 +18,4 @@
 
 # Point to Remember
 - appendChild -> root.appendChild(anyAttribute) -> will append the value inside the root and make it visible
+- React.createElement(3 arg have to pass), ReactDOM.createRoot(document.getElementById("id"))

@@ -6,7 +6,16 @@
     <title>My Farm</title>
 </head>
 <body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+
+        const heading = React.createElement("h1", {}, "I am coming from React!");
+        const findingRoot = ReactDOM.createRoot(document.getElementById("root"));
+        findingRoot.render(heading);
+        
+    </script>
 </body>
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </html>
