@@ -1,20 +1,5 @@
-/**
- * 
- * <div id="parent">
- *      <div id="child">
- *          <h1> heading 1 </h1>
- *          <h2> heading 2 </h2>
- *      </div>
- *          
- *      <div id="child2">
- *          <h1> heading 1 </h1>
- *          <h2> heading 2 </h2>
- *      </div>
- * </div>
- * 
- */
-
-// To add sibling -> we have to wrap inside ->  []
+import React from "react";
+import ReactDOM from "react-dom/client"
 
 const heading = React.createElement("div", {id:"parent"}, 
     [

@@ -14,7 +14,11 @@
 - Consistent Hashing
 - Tree Shaking Algorithm --> It remove unused code
 - It have Different Build for DEVELOPMENT and PRODUCTION
-- 
+- Code splitting
+- Diagnostic
+- Error handling
+- HTTP to HTTPS => It will convert and support
+- It have different build for Development & production -> npx parcel build index.html
 
 # Point to Remember
 - appendChild -> root.appendChild(anyAttribute) -> will append the value inside the root and make it visible
