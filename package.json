@@ -4,7 +4,7 @@
   "description": "My own new react project",
   "scripts": {
     "start": "parcel index.html",
-    "productionBuild": "parcel build index.html",
+    "productionbuild": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
