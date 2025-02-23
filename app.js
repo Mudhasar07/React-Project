@@ -1,24 +1,40 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 
-const heading = React.createElement("h1", {id: "heading"}, "The heading 1"); // Normal create Element
-
 /**
  * 
+ * React Components are 2 types
+ *  1. Class based component -> Old way.
+ *  2. Functional component -> New way
  * 
- * JSX is a not pure JS Code. JS Browser does not understand JSX. its throw error.
+ * Functional component -> is a normal Javascript Function -> Which returns some JSX code or ReactElement -> is an normal JS Object
  * 
- * Babel will Convert JSX into normal React.createElement.
+ * Functional Component always start with CAPITAL LETTER.
  * 
- * JSX => Babel transpile it to React.createElement => ReactElement as (JS object) => change to HTML Element => RENDER it to browser.
- * 
+ * Component Composition -> Passing another react component inside a react component.
  * 
  */
 
-const jsxHeading = (<h1 id="heading" >
-    Heading from JSX - Babel
-    </h1>) // JSX syntax for creating element
+const TitleComponent = () =>{
+    return <h1 id="heading"> I am Title Component</h1>
+}
+
+const EndComponent = () => {
+    return (
+        <h1 id="endingComponent"> I am Ending Component</h1>
+    )
+}
+
+const HeadingComponent = () =>{
+    return (
+        <div id="container">
+            <TitleComponent />
+            <h1>I am Heading Component</h1>
+            <EndComponent />
+        </div>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
